@@ -6,6 +6,12 @@
 	"homepage": "https://github.com/juanrdlo/site-for-codeigniter",
 	"license": "MIT",
 	"minimum-stability": "dev",
+	"authors": [
+        {
+            "name": "Juan R. De Leon Osorio",
+            "email": "juanrdlo25@gmail.com"
+        }
+    ],
 	"support": {
 		"forum": "https://forum.codeigniter.com/",
 		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
@@ -14,11 +20,5 @@
 	},
 	"require": {
 		"php": ">=5.4.8"
-	},
-	"repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/juanrdlo/web-front-back-codeigniter.git"
-        }
-    ]
+	}
 }
