@@ -1,7 +1,7 @@
 {
 	"description": "Template for back-end and front-end",
 	"version": "1.0",
-	"name": "juanrdlo/projectwebcodeigniter",
+	"name": "juanrdlo/web-front-back-framework",
 	"type": "project",
 	"homepage": "https://github.com/juanrdlo/site-for-codeigniter",
 	"license": "MIT",
