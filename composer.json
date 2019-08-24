@@ -1,6 +1,6 @@
 {
-	"description": "The CodeIgniter framework",
-	"name": "codeigniter/framework",
+	"description": "Template for back-end and front-end",
+	"name": "juanrdlo/site-for-codeigniter",
 	"type": "project",
 	"homepage": "https://codeigniter.com",
 	"license": "MIT",
