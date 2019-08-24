@@ -13,5 +13,11 @@
 	},
 	"require": {
 		"php": ">=5.4.8"
-	}
+	},
+	"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/juanrdlo/site-in-codeigniter.git"
+        }
+    ]
 }
