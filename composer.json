@@ -5,7 +5,7 @@
 	"type": "project",
 	"homepage": "https://github.com/juanrdlo/site-for-codeigniter",
 	"license": "MIT",
-	"stability": "dev",
+	"minimum-stability":"dev",
 	"authors": [
         {
             "name": "Juan R. De Leon Osorio",
