@@ -1,5 +1,6 @@
 {
 	"description": "Template for back-end and front-end",
+	"version": "1.0",
 	"name": "juanrdlo/projectwebcodeigniter",
 	"type": "project",
 	"homepage": "https://github.com/juanrdlo/site-for-codeigniter",
@@ -12,6 +13,5 @@
 	},
 	"require": {
 		"php": ">=5.4.8"
-	},
-	"minimun-stability":"dev"
+	}
 }
