@@ -17,7 +17,7 @@
 	"repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/juanrdlo/site-in-codeigniter.git"
+            "url": "https://github.com/juanrdlo/web-front-back-codeigniter.git"
         }
     ]
 }
