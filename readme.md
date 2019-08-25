@@ -1,6 +1,4 @@
-#############################################
-Template on Site BackEnd-FrontEnd Codeigniter
-#############################################
+# Template on Site BackEnd-FrontEnd Codeigniter
 
 CodeIgniter is an Application Development Framework - a toolkit - for people
 who build web sites using PHP. Its goal is to enable you to develop projects
@@ -10,16 +8,12 @@ interface and logical structure to access these libraries. CodeIgniter lets
 you creatively focus on your project by minimizing the amount of code needed
 for a given task.
 
-*******************
-Release Information
-*******************
+### Release Information
 
 This repo contains a structure ready to use as a backend and front-end in 
 any type of project. Codeigniter framework based
 
-*******************
-Server Requirements
-*******************
+### Server Requirements
 
 - SERVER CENTOS 7.x
 `$ yum update -y`
@@ -60,28 +54,21 @@ gpgkey=https://nginx.org/keys/nginx_signing.key
 </pre>
 `$ yum install nginx -y ; systemctl start nginx.service ; systemctl enable nginx; systemctl restart nginx.service`
 
-******************
-Quick Installation
-******************
+### Quick Installation
 -
 -
 
-***************************
-Steps by Steps Installation
-***************************
+### Steps by Steps Installation
+
 `$ cd /usr/share/nginx/PROJECT-NAME`
 `$ composer create-project juanrdlo/web-front-back-framework`
 `$ mv web-front-back-framework PROJECT-NAME`
 
-***********************
-Installation on Windows
-***********************
+### Installation on Windows
 
 - 
 
-*******
-License
-*******
+### License
 
 Please see the `license
 agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
