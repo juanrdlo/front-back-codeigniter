@@ -1,3 +1,8 @@
+<p align="center">
+<a href="https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<a href="https://github.com/juanrdlo/front-back-codeigniter"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+</p>
+
 # Template on Site BackEnd-FrontEnd Codeigniter
 
 CodeIgniter is an Application Development Framework - a toolkit - for people
