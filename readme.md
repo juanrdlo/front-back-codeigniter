@@ -18,6 +18,11 @@ any type of project. Codeigniter framework based
 #### SERVER CENTOS 7.x
 `$ yum update -y`
 
+#### GIT IS REQUERID
+<pre>
+$ yum install git
+</pre>
+
 #### PHP VERSION 7.2 IS RECOMMENDED.
 <pre>
 $ sudo yum install -y epel-release
@@ -36,16 +41,6 @@ $ sudo systemctl restart php-php-fpm.service
 $ sudo systemctl status php-fpm.service
 </pre>
 
-- COMPOSER LAST VERSION 1.9.0
-<pre>
-$ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-$ HASH="$(wget -q -O - https://composer.github.io/installer.sig)"
-$ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-OUTPUT: Installer verified
-$ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-$ composer --version
-</pre>
-
 - NGINX 1.16
 <pre>
 $ nano /etc/yum.repos.d/nginx.repo
@@ -58,6 +53,16 @@ enabled=1
 gpgkey=https://nginx.org/keys/nginx_signing.key
 
 $ yum install nginx -y ; systemctl start nginx.service ; systemctl enable nginx; systemctl restart nginx.service
+</pre>
+
+- COMPOSER LAST VERSION 1.9.0
+<pre>
+$ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+$ HASH="$(wget -q -O - https://composer.github.io/installer.sig)"
+$ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+OUTPUT: Installer verified
+$ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+$ composer --version
 </pre>
 
 ## Quick Installation Unix/Centos7
