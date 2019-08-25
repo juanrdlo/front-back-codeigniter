@@ -1,9 +1,9 @@
 {
 	"description": "Template for back-end and front-end",
 	"version": "1.0",
-	"name": "juanrdlo/web-front-back-framework",
+	"name": "juanrdlo/template-codeigniter-back-front",
 	"type": "project",
-	"homepage": "https://github.com/juanrdlo/site-for-codeigniter",
+	"homepage": "https://github.com/juanrdlo/web-front-back-codeigniter.git",
 	"license": "MIT",
 	"minimum-stability":"dev",
 	"authors": [
