@@ -70,15 +70,23 @@ $ composer --version
 
 ## Installation Steps by Steps
 
+* Note: replace [PROJECT-NAME] with the name of your project.
+
 <pre>
-$ cd /usr/share/nginx/PROJECT-NAME
-$ composer create-project juanrdlo/web-front-back-framework
-$ mv web-front-back-framework PROJECT-NAME
+$ yum -y update
+$ 
+$ cd /usr/share/nginx/[PROJECT-NAME]
+$ composer create-project juanrdlo/front-back-codeigniter | git clone https://github.com/juanrdlo/front-back-codeigniter.git 
+$ mv front-back-codeigniter [PROJECT-NAME]
+$ rm -rf /usr/share/nginx/[PROJECT-NAME]/.git*
+$ rm /usr/share/nginx/[PROJECT-NAME]/readme.md
+$ rm /usr/share/nginx/[PROJECT-NAME]/readme.rst
+$ git init /usr/share/nginx/[PROJECT-NAME]
+$ git remote add origin "$repo_url"
+$ git add --all .
+$ git commit -m "Install Framework"
+$ git push origin master
 </pre>
-
-### Installation on Windows
-
-`composer create-project juanrdlo/web-front-back-framework`
 
 ### License
 
