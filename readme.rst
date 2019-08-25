@@ -69,9 +69,9 @@ Quick Installation
 Steps by Steps Installation
 ***************************
 
-`cd /usr/share/nginx/"PROJECT-NAME"`
+`cd /usr/share/nginx/PROJECT-NAME`
 `composer create-project juanrdlo/web-front-back-framework`
-`mv web-front-back-framework "PROJECT-NAME"`
+`mv web-front-back-framework PROJECT-NAME`
 
 ***********************
 Installation on Windows
