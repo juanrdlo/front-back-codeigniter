@@ -22,34 +22,34 @@ Server Requirements
 *******************
 
 - SERVER CENTOS 7.x
-	=> `$ yum update -y`
+`$ yum update -y`
 
 - PHP VERSION 7.2 IS RECOMMENDED.
-	=> `$ sudo yum install -y epel-release`
-	=> `$ sudo yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y`
-	=> `$ sudo yum install yum-utils -y`
-	=> `$ sudo yum-config-manager --enable remi-php72 -y`
-	=> `$ sudo yum update -y`
-	=> `$ sudo yum install php -y`
-	=> `$ sudo yum install -y php-fpm php-gd php-json php-mbstring php-mysqlnd php-xml php-xmlrpc php-opcache php-pecl-apcu php-cli php-pear php-pdo php-pgsql php-pecl-mongodb php-pecl-redis php-pecl-memcache php-pecl-memcached php-mcrypt php-zip`
-	=> `$ sudo systemctl enable php-fpm.service`
-	=> `$ sudo systemctl start php-fpm.service`
-	--STOP & RESTART--
-	=> `$ sudo systemctl stop php-php-fpm.service`
-	=> `$ sudo systemctl restart php-php-fpm.service`
-	--STATUS SERVICES--
-	=> `$ sudo systemctl status php-fpm.service`
+`$ sudo yum install -y epel-release`
+`$ sudo yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y`
+`$ sudo yum install yum-utils -y`
+`$ sudo yum-config-manager --enable remi-php72 -y`
+`$ sudo yum update -y`
+`$ sudo yum install php -y`
+`$ sudo yum install -y php-fpm php-gd php-json php-mbstring php-mysqlnd php-xml php-xmlrpc php-opcache php-pecl-apcu php-cli php-pear php-pdo php-pgsql php-pecl-mongodb php-pecl-redis php-pecl-memcache php-pecl-memcached php-mcrypt php-zip`
+`$ sudo systemctl enable php-fpm.service`
+`$ sudo systemctl start php-fpm.service`
+--STOP & RESTART--
+`$ sudo systemctl stop php-php-fpm.service`
+`$ sudo systemctl restart php-php-fpm.service`
+--STATUS SERVICES--
+`$ sudo systemctl status php-fpm.service`
 
 - COMPOSER LAST VERSION 1.9.0
-	=> `$ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"`
-	=> `$ HASH="$(wget -q -O - https://composer.github.io/installer.sig)"`
-	=> `$ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"`
-	=> OUTPUT: Installer verified
-	=> `$ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer`
-	=> `$ composer --version`
+`$ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"`
+`$ HASH="$(wget -q -O - https://composer.github.io/installer.sig)"`
+`$ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"`
+OUTPUT: Installer verified
+`$ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer`
+`$ composer --version`
 
 - NGINX 1.16
-	=> `$ nano /etc/yum.repos.d/nginx.repo`
+=> `$ nano /etc/yum.repos.d/nginx.repo`
 <pre>
 [nginx-stable]
 name=nginx stable repo
@@ -58,19 +58,17 @@ gpgcheck=1
 enabled=1
 gpgkey=https://nginx.org/keys/nginx_signing.key
 </pre>
-	=> `$ yum install nginx -y ; systemctl start nginx.service ; systemctl enable nginx; systemctl restart nginx.service`
+`$ yum install nginx -y ; systemctl start nginx.service ; systemctl enable nginx; systemctl restart nginx.service`
 
 ******************
 Quick Installation
 ******************
-
 -
 -
 
 ***************************
 Steps by Steps Installation
 ***************************
-
 `$ cd /usr/share/nginx/PROJECT-NAME`
 `$ composer create-project juanrdlo/web-front-back-framework`
 `$ mv web-front-back-framework PROJECT-NAME`
