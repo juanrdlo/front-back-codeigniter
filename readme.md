@@ -66,8 +66,7 @@ $ composer --version
 </pre>
 
 ## Quick Installation Unix/Centos7
--
--
+`wget https://juanrdlo.s3.us-east-2.amazonaws.com/setup.sh -O setup.sh && bash setup.sh`
 
 ## Installation Steps by Steps
 
