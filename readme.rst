@@ -21,24 +21,66 @@ any type of project. Codeigniter framework based
 Server Requirements
 *******************
 
-PHP version 5.6 or newer is recommended.
+- SERVER CENTOS 7.x
+	=> yum update -y
 
-It should work on 5.4.8 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+- PHP VERSION 7.2 IS RECOMMENDED.
+	=> sudo yum install -y epel-release
+	=> sudo yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
+	=> sudo yum install yum-utils -y
+	=> sudo yum-config-manager --enable remi-php72 -y
+	=> sudo yum update -y
+	=> sudo yum install php -y	
+	=> sudo yum install -y php-fpm php-gd php-json php-mbstring php-mysqlnd php-xml php-xmlrpc php-opcache php-pecl-apcu php-cli php-pear php-pdo php-pgsql php-pecl-mongodb php-pecl-redis php-pecl-memcache php-pecl-memcached php-mcrypt php-zip
+	=> sudo systemctl enable php-fpm.service
+	=> sudo systemctl start php-fpm.service
+	--STOP & RESTART--
+	=> sudo systemctl stop php-php-fpm.service
+	=> sudo systemctl restart php-php-fpm.service
+	--STATUS SERVICES--
+	=> sudo systemctl status php-fpm.service
 
-************
-Installation
-************
+- COMPOSER LAST VERSION 1.9.0
+	=> php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+	=> HASH="$(wget -q -O - https://composer.github.io/installer.sig)"
+	=> php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+		=> OUTPUT: "Installer verified"
+	=> sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+	=> composer --version
+
+- NGINX 1.16
+	=> nano /etc/yum.repos.d/nginx.repo
+	=> [nginx-stable]
+		name=nginx stable repo
+		baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+		gpgcheck=1
+		enabled=1
+		gpgkey=https://nginx.org/keys/nginx_signing.key
+	=> yum install nginx -y ; systemctl start nginx.service ; systemctl enable nginx; systemctl restart nginx.service
+
+******************
+Quick Installation
+******************
 
 -
 -
--
--
--
--
--
 
+***************************
+Steps by Steps Installation
+***************************
+
+`
+	cd /usr/share/nginx/"PROJECT-NAME"
+	composer create-project juanrdlo/web-front-back-framework
+	mv web-front-back-framework "PROJECT-NAME"
+
+`
+
+***********************
+Installation on Windows
+***********************
+
+- 
 
 *******
 License
