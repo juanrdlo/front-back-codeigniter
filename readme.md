@@ -13,7 +13,7 @@ for a given task.
 This repo contains a structure ready to use as a backend and front-end in 
 any type of project. Codeigniter framework based
 
-### Server Requirements
+## Server Requirements
 
 #### SERVER CENTOS 7.x
 `$ yum update -y`
@@ -60,11 +60,11 @@ gpgkey=https://nginx.org/keys/nginx_signing.key
 $ yum install nginx -y ; systemctl start nginx.service ; systemctl enable nginx; systemctl restart nginx.service
 </pre>
 
-### Quick Installation
+## Quick Installation Unix/Centos7
 -
 -
 
-### Steps by Steps Installation
+## Installation Steps by Steps
 
 <pre>
 $ cd /usr/share/nginx/PROJECT-NAME
@@ -74,7 +74,7 @@ $ mv web-front-back-framework PROJECT-NAME
 
 ### Installation on Windows
 
-- 
+`composer create-project juanrdlo/web-front-back-framework`
 
 ### License
 
