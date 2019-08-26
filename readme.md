@@ -73,6 +73,7 @@ $ composer --version
 ## Quick Installation Unix/Centos7
 Spanish
 `wget https://juanrdlo.s3.us-east-2.amazonaws.com/setup_sp.sh -O setup.sh && bash setup.sh`
+
 English
 `wget https://juanrdlo.s3.us-east-2.amazonaws.com/setup_en.sh -O setup.sh && bash setup.sh`
 
